@@ -30,7 +30,7 @@ const SideBar = () => {
  )
 }
 
-const SideBarIcon = ({ icon, text = "tooltip 💡", hover }) => (
+const SideBarIcon: React.FC<{ icon: React.ReactNode; text?: string; hover: string }> = ({ icon, text = "tooltip 💡", hover }) => (
  <div
   className={`sidebar-icon group relative mx-auto mb-2 mt-2
     flex h-12 w-12 cursor-pointer items-center justify-center rounded-3xl bg-gray-800 text-green-500
@@ -45,6 +45,7 @@ const SideBarIcon = ({ icon, text = "tooltip 💡", hover }) => (
   </span>
  </div>
 )
+
 
 const Divider = () => (
  <hr

@@ -85,7 +85,7 @@ const BottomBar = () => (
   />
  </div>
 )
-const Post = ({ name, timestamp, text }) => {
+const Post: React.FC<{ name: string; timestamp: string; text: string }> = ({ name, timestamp, text }) => {
  return (
   <div className="post m-0 flex w-full cursor-pointer flex-row items-center justify-evenly px-8 py-4">
    <div className="avatar-wrapper m-0 mb-auto ml-auto flex w-12 flex-col items-center">
